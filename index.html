@@ -169,7 +169,7 @@
                         </div>
                     </div>
                 </div>
-                <form class="contact-form glass-form" action="https://script.google.com/macros/s/AKfycbzMDDt4Vin5eZl01KS42ll7mlmCIne-Kwd1oH_eiZvn_7UVQcvsObucy1apWacNVE_MbQ/exec" method="POST">
+                <form id= "contactForm" class="contact-form glass-form" action="https://script.google.com/macros/s/AKfycbzMDDt4Vin5eZl01KS42ll7mlmCIne-Kwd1oH_eiZvn_7UVQcvsObucy1apWacNVE_MbQ/exec" method="POST">
                     <input type="hidden" name="form" value="Home">
                     <div class="form-group">
                         <label for="name">Your Name *</label>
@@ -244,6 +244,33 @@
             </div>
         </div>
     </footer>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const form = e.target;
+  const formData = new FormData(form);
+
+  fetch("https://script.google.com/macros/s/YOUR_DEPLOYED_SCRIPT_ID/exec", {
+    method: "POST",
+    body: formData,
+  })
+    .then((response) => {
+      if (response.ok) {
+        // Optional: disable button, show success briefly
+        window.location.href = "/thank-you.html";
+      } else {
+        alert("Something went wrong. Please try again later.");
+      }
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+      alert("Form failed to submit.");
+    });
+});
+</script>
+
 
     <script src="assets/js/script.js"></script>
 </body>
