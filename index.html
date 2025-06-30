@@ -170,7 +170,7 @@
                     </div>
                 </div>
                 <form id= "contactForm" class="contact-form glass-form" action="https://script.google.com/macros/s/AKfycbzMDDt4Vin5eZl01KS42ll7mlmCIne-Kwd1oH_eiZvn_7UVQcvsObucy1apWacNVE_MbQ/exec" method="POST">
-                    <input type="hidden" name="form" value="Home">
+                    <input type="hidden" name="form" value="Home" />
                     <div class="form-group">
                         <label for="name">Your Name *</label>
                         <input type="text" id="name" name="name" required>
@@ -252,21 +252,20 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
   const form = e.target;
   const formData = new FormData(form);
 
-  fetch("https://script.google.com/macros/s/YOUR_DEPLOYED_SCRIPT_ID/exec", {
+  fetch("https://script.google.com/macros/s/https://script.google.com/macros/s/AKfycbwBjZ9dPdF81y4XNSzimQOF1hwSqKHDfBWEznxbOtmDLKvXqxXch4K2d5TlsAx5db2E_w/exec", {
     method: "POST",
     body: formData,
   })
     .then((response) => {
       if (response.ok) {
-        // Optional: disable button, show success briefly
-        window.location.href = "/thank-you.html";
+        window.location.href = "/just-busting-your-balls.html";
       } else {
-        alert("Something went wrong. Please try again later.");
+        alert("Submission failed. Please try again.");
       }
     })
     .catch((error) => {
-      console.error("Error:", error);
-      alert("Form failed to submit.");
+      console.error("Error submitting form:", error);
+      alert("Something went wrong.");
     });
 });
 </script>
