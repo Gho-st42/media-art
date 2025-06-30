@@ -115,34 +115,27 @@
                         </div>
                     </div>
                 </div>
-                <form class="idea-form glass-form" action="https://script.google.com/macros/s/AKfycbzMDDt4Vin5eZl01KS42ll7mlmCIne-Kwd1oH_eiZvn_7UVQcvsObucy1apWacNVE_MbQ/exec" method="POST">
-                    <input type="hidden" name="form" value="Productions">
+                </form>
+                <form id= "contactForm" class="contact-form glass-form" action="https://script.google.com/macros/s/AKfycbzMDDt4Vin5eZl01KS42ll7mlmCIne-Kwd1oH_eiZvn_7UVQcvsObucy1apWacNVE_MbQ/exec" method="POST">
+                    <input type="hidden" name="form" value="Productions" />
                     <div class="form-group">
-                        <label for="idea-name">Your Name *</label>
-                        <input type="text" id="idea-name" name="name" required>
+                        <label for="name">Your Name *</label>
+                        <input type="text" id="name" name="name" required>
                     </div>
                     <div class="form-group">
-                        <label for="idea-email">Your Email *</label>
-                        <input type="email" id="idea-email" name="email" required>
+                        <label for="email">Your Email *</label>
+                        <input type="email" id="email" name="email" required>
                     </div>
                     <div class="form-group">
-                        <label for="program-type">Type of Program *</label>
-                        <select id="program-type" name="program-type" required>
-                            <option value="">Select Program Type</option>
-                            <option value="podcast">Podcast</option>
-                            <option value="video-series">Video Series</option>
-                            <option value="workshop">Workshop</option>
-                            <option value="course">Online Course</option>
-                            <option value="documentary">Documentary</option>
-                            <option value="other">Other</option>
-                        </select>
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+20">
                     </div>
                     <div class="form-group">
-                        <label for="idea-description">Tell us about your idea *</label>
-                        <textarea id="idea-description" name="description" rows="5" required></textarea>
+                        <label for="message">Tell us about your idea *</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Submit Your Idea</button>
-                </form>
+                </form>                
             </div>
         </div>
     </section>
