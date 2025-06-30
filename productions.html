@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Art Agency</title>
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon/android-chrome-512x512.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#315762">
+    <meta name="msapplication-TileImage" content="assets/favicon/mstile-150x150.png">
+    <meta name="theme-color" content="#315762">
+</head>
+<body>
+    <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>        
+    </div>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="logo-icon"><img class="maa-logo-nav" src="assets/images/logo.png" alt="Media Art Agency"></span>
+                <span>Media Art Agency</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="productions.html" class="nav-link active">Productions</a></li>
+                <li><a href="careers.html" class="nav-link">Careers</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Productions</h1>
+            <p>Showcasing creative projects and successful campaigns that have made an impact</p>
+        </div>
+    </section>
+
+    <!-- Productions Grid -->
+    <section class="productions">
+        <div class="container">
+            <div class="productions-grid">
+
+                <!-- Test Podcast -->
+                <div class="production-card" data-production="test">
+                    <div class="production-image">
+                        <i class="fas fa-microphone-alt"></i>
+                    </div>
+                    <div class="production-info">
+                        <h3>Test Podcast</h3>
+                        <p class="production-type">Podcast Series</p>
+                        <p>Yeah Hommies just me making some shitty text until I have the damn data.</p>
+                        <div class="production-stats">
+                            <span><i class="fas fa-play"></i> 50 Episodes</span>
+                            <span><i class="fas fa-users"></i> 1.6M Listeners</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Have an Idea Section -->
+    <section class="idea-section">
+        <div class="container">
+            <div class="idea-content">
+                <div class="idea-info">
+                    <h2>Have an Idea? Let's Turn It Into Reality!</h2>
+                    <p>Got a concept for a podcast, program, or any creative project? We're here to help bring your vision to life with our expertise and passion.</p>
+                    <div class="idea-features">
+                        <div class="feature">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Concept Development</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-cogs"></i>
+                            <span>Full Production Support</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-rocket"></i>
+                            <span>Launch & Promotion</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="idea-form glass-form" action="https://script.google.com/macros/s/AKfycbzMDDt4Vin5eZl01KS42ll7mlmCIne-Kwd1oH_eiZvn_7UVQcvsObucy1apWacNVE_MbQ/exec" method="POST">
+                    <input type="hidden" name="form" value="Productions">
+                    <div class="form-group">
+                        <label for="idea-name">Your Name *</label>
+                        <input type="text" id="idea-name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="idea-email">Your Email *</label>
+                        <input type="email" id="idea-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="program-type">Type of Program *</label>
+                        <select id="program-type" name="program-type" required>
+                            <option value="">Select Program Type</option>
+                            <option value="podcast">Podcast</option>
+                            <option value="video-series">Video Series</option>
+                            <option value="workshop">Workshop</option>
+                            <option value="course">Online Course</option>
+                            <option value="documentary">Documentary</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="idea-description">Tell us about your idea *</label>
+                        <textarea id="idea-description" name="description" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Your Idea</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Production Modal -->
+    <div class="production-modal" id="production-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <h2 class="modal-title"></h2>
+                <p class="modal-type"></p>
+            </div>
+            <div class="modal-body">
+                <p class="modal-description"></p>
+                <div class="modal-details"></div>
+<!--                <div class="modal-social">
+                    <h4>Follow & Listen:</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link spotify"><i class="fab fa-spotify"></i></a>
+                        <a href="#" class="social-link facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link youtube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+ -->               
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <span class="logo-icon"><img class="maa-logo-footer" src="assets/images/logo.png" alt="Media Art Agency"></span>
+                        <span>Media Art Agency</span>
+                    </div>
+                    <p>We craft high-performance digital experiences that drive real business results.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/media_art_agancy/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/people/Media-Art-Agency/61577105932774/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="productions.html">Productions</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li>Social Media Management</li>
+                        <li>Brand Design</li>
+                        <li>Digital Marketing</li>
+                        <li>Content Creation</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Developed By | Mohamed Mostafa</h4>
+                    <div class="developer-info">
+                        <div class="social-links">
+                            <a href="https://mohamed-mostafa-dev.vercel.app" target="_blank"><i class="fas fa-globe"></i></a>                            
+                            <a href="https://github.com/Gho-st42" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/mohamed-mostafa-dev" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://x.com/backend_stabbed" target="_blank"><i class="fab fa-twitter"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Media Art Agency. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

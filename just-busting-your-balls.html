@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Got You Hommie</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon/android-chrome-512x512.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#315762">
+    <meta name="msapplication-TileImage" content="assets/favicon/mstile-150x150.png">
+    <meta name="theme-color" content="#315762">
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    #videoWrapper {
+      position: relative;
+      max-width: 100%;
+    }
+
+    video {
+      width: 100%;
+      height: auto;
+      display: none;
+    }
+
+    #playOverlay {
+      position: absolute;
+      z-index: 1;
+      color: white;
+      font-size: 1.5rem;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 1rem 2rem;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="videoWrapper">
+    <div id="playOverlay">▶</div>
+    <video id="thankYouVideo">
+      <source src="assets/never-gonna-give-you-up.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <script>
+    const overlay = document.getElementById("playOverlay");
+    const video = document.getElementById("thankYouVideo");
+
+    overlay.addEventListener("click", () => {
+      overlay.style.display = "none";
+      video.style.display = "block";
+      video.play();
+    });
+
+    video.onended = () => {
+      window.location.href = "/";
+    };
+  </script>
+</body>
+</html>
