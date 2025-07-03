@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mediaartagency.vercel.app/sitemap.xml
